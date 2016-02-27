@@ -2,6 +2,7 @@ class ApiController < ApplicationController
   before_filter :set_current_user, :authenticate_user!
 
   def show
+    p "new updates"
     render json: current_user
   end
 
